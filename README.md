@@ -46,6 +46,7 @@ python manage.py runserver
 
 6. Sample input data
 a) For creating classes - POST /api/classes/
+
     {
        
         "name": "Yoga Basics",
@@ -54,7 +55,9 @@ a) For creating classes - POST /api/classes/
         "available_slots": 9,
         
       }
+
 b) To get the Classes List - GET /api/classes/
+
    {
     "id": 1,
     "name": "Yoga Basics",
@@ -65,6 +68,7 @@ b) To get the Classes List - GET /api/classes/
    }
 
 c) For Booking the class - POST /api/book/
+
   {
     
     "client_name": "Shravani Kavale",
@@ -73,6 +77,7 @@ c) For Booking the class - POST /api/book/
   }
 
 d) To get the Booking List - GET /api/bookings/
+
   {
     "id": 1,
     "client_name": "Shravani Kavale",
