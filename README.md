@@ -23,8 +23,25 @@ A Django RESTful API to manage Yoga class schedules and client bookings.
 
 ## 🛠️ Setup Instructions
 
-### 1. Clone the repository
+1. Clone the Repo
 
 ```bash
 git clone https://github.com/shravanikavale/Yoga_BookingAPI.git
 cd Yoga_BookingAPI
+
+2. Create Virtual Environment
+python -m venv venv
+venv/Scripts/activate
+
+3. Install Dependencies
+pip install -r requirements.txt
+
+4. Run Migrations
+python manage.py makemigrations
+python manage.py migrate
+
+5. Run Server
+python manage.py runserver
+
+
+
