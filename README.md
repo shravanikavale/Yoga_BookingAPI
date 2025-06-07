@@ -44,4 +44,40 @@ python manage.py migrate
 python manage.py runserver
 
 
+6. Sample input data
+a) For creating classes - POST /api/classes/
+    {
+       
+        "name": "Yoga Basics",
+        "date_time": "2025-06-08T15:30:00+05:30",
+        "instructor": "ABC",
+        "available_slots": 9,
+        
+      }
+b) To get the Classes List - GET /api/classes/
+   {
+    "id": 1,
+    "name": "Yoga Basics",
+    "date_time": "2025-06-08T15:30:00+05:30",
+    "instructor": "ABC",
+    "available_slots": 9,
+    "created_at": "2025-06-07T14:20:49.198560+05:30"
+   }
+
+c) For Booking the class - POST /api/book/
+  {
+    
+    "client_name": "Shravani Kavale",
+    "client_email": "shravani.kavale27@gmail.com",
+    "fitness_class": 1
+  }
+
+d) To get the Booking List - GET /api/bookings/
+  {
+    "id": 1,
+    "client_name": "Shravani Kavale",
+    "client_email": "shravani.kavale27@gmail.com",
+    "created_at": "2025-06-07T14:27:42.678939+05:30",
+    "fitness_class": 1
+  }
 
