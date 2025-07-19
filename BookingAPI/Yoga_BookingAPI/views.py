@@ -70,6 +70,8 @@ class BookClass(APIView):
         
 
         
+
+        
 class BookingList(APIView):
     def get(self, request):
         email = request.query_params.get("email")
