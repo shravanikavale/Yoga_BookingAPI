@@ -68,6 +68,8 @@ class BookClass(APIView):
             logger.error(f"Invalid class ID: {class_id}")
             return Response({"error": "Invalid class ID"}, status=status.HTTP_404_NOT_FOUND)
         
+
+        
 class BookingList(APIView):
     def get(self, request):
         email = request.query_params.get("email")
